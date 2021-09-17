@@ -1,0 +1,65 @@
+body {
+  background: #e5e5e5;
+}
+
+/* Container styles */
+.container {
+  background: #fff;
+  margin: auto;
+  width: 375px;
+  height: 718px;
+}
+
+/* Navigation styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 36px 0 24px;
+}
+
+/* CSS for here and message class */
+.section {
+  margin: 114px 24px 0 24px;
+}
+
+/* CSS for the intro message */
+.hero {
+  width: 327px;
+  height: 150px;
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+/* Styles for the message class */
+.message {
+  width: 327px;
+  height: 126px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 80px;
+}
+
+/* styles for the link div */
+.link {
+  width: 117px;
+  height: 24px;
+  margin-left: 24px;
+}
+
+/* styles for the connect link */
+.link a {
+  text-decoration: none;
+  color: #7f8cff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+}
+
+/* Social icon styles */
+.social {
+  margin: 12px 0 0 24px;
+}
