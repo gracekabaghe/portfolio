@@ -4,9 +4,8 @@
 
 body {
   background: #e5e5e5;
-  display: flex;
   width: 375px;
-  height: 718x;
+  height: 718px;
   margin: auto;
   display: grid;
 }
@@ -231,7 +230,7 @@ body {
   margin-top: 80px;
 }
 
-.about-button{
+.about-button {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -257,7 +256,6 @@ h2 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -277,5 +275,5 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
-  border-bottom: solid 1px #dfe1e6;;
+  border-bottom: solid 1px #dfe1e6;
 }
