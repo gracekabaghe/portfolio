@@ -35,6 +35,11 @@ body {
   padding: 20px;
 }
 
+.hamb {
+  color: blue;
+  margin-top: 10px;
+}
+
 .logo-fa {
   display: flex;
   width: 100%;
