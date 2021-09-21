@@ -1,30 +1,44 @@
-body {
-  background: #e5e5e5;
-  display: flex;
-  width: 375px;
-  height: 5410px;
-  margin: auto;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Container styles */
+body {
+  background: #e5e5e5;
+}
+
 .container {
+  width: 420px;
+  height: 718px;
+  margin: auto;
+  display: grid;
+}
+
+/* card1 styles */
+
+.card1-container {
   background: #fff;
-  background-image: url(images/header-shapes\ mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 375px;
-  height: 718px;
-  padding-top: 8%;
-  margin-bottom: 2%;
 }
 
 /* Navigation styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 24px 0 24px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.logo-fa {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .logo-link {
@@ -46,6 +60,7 @@ body {
   padding-top: 15%;
   border-radius: 1%;
   margin: 0 24px 0 24px;
+  background-image: url(images/header-shapes\ mobile.png);
 }
 
 /* Styles for the h1 and p */
@@ -71,21 +86,13 @@ body {
   color: #344563;
 }
 
-/* Social icon styles */
 .connent-icons {
   display: flex;
   justify-content: flex-start;
   list-style: none;
-  margin: 0;
-  position: relative;
-  right: 10%;
-}
-
-.connent-icons li {
-  display: flex;
-  justify-content: flex-start;
-  list-style: none;
-  margin: 0;
+  gap: 10px;
+  padding-left: 0;
+  align-items: baseline;
 }
 
 .connect {
