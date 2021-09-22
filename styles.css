@@ -198,7 +198,17 @@ h2 {
 }
 
 .btn-h:hover {
-  color: red;
+  color: #396df2;
+  text-decoration: underline;
+}
+
+.btn-h:visited {
+  color: #396df2;
+  text-decoration: underline;
+}
+
+.btn-h:active {
+  text-decoration: underline;
 }
 
 .about-intro {
