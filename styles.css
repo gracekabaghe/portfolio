@@ -170,10 +170,11 @@ h2 {
 
 .lang {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   list-style: none;
   color: #6070ff;
   padding-left: 16px;
+  float: right;
 }
 
 .lang li {
