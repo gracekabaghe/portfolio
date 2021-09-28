@@ -191,20 +191,32 @@
 
             <!-- form section -->
             <section>
-                <h2>Contact me</h2>
-                <p>
-                    If you have an application you are interested in developing,
+                <div class="contact-section">
+                   <h2 class="contact-h2">Contact me</h2>
+                   <p class="contact-p">
+                  If you have an application you are interested in developing,
                     a feature that you need built or a project that needs coding.
                     I’d love to help with it
-                </p>
-                <form action="https://formspree.io/f/xleavrle" method="POST">
-                    <input type="text" id="name" name="user_name" maxlength="30" placeholder="Enter Your Name Here">
-                    <input type="email" id="email" name="email" placeholder="@email">
-                    <textarea maxlength="500">Enter your text here</textarea>
-                    <button type="submit">Get in touch</button>
-
-                </form>
+                    </p>
+                    <form action="https://formspree.io/f/xleavrle" method="POST">
+                        <ul class="form-ul">
+                            <li>
+                                <label for="name"></label>
+                                <input type="text" id="name" name="user_name" maxlength="30" placeholder="Enter Your Name Here" required>
+                            </li>
+                            <li>
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                            </li>
+                            <li>
+                                <label for="message"></label>
+                                <textarea type="text" id="message" maxlength="500" placeholder="Message" required></textarea>
+                            </li>                  
+                        </ul>
+                        <button type="submit" class="form-btn">Get In Touch</button>
+                    </form>
+                    <div class="bottom-line"></div>
+                </div>
             </section>
-
         </section>
     </div>
