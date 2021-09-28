@@ -10,6 +10,18 @@ This project aims to show my soft skills as well as my technical skill-sets
 - CSS
 - Github
 
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Install
+
+- Clone this repo git@github.com:gracekabaghe/portfolio.git
+- Navigate to atform branch
+- Open the folder in your code editor
+
+
 ## Authors
 
 👤 **Grace Kabaghe**
