@@ -11,22 +11,27 @@ body {
 }
 
 .container {
-  width: 100%;
-  margin: auto;
   display: grid;
+  margin-top: -10%;
 }
 
 /* card1 styles */
 
 .card1-container {
+  width: 90%;
   background: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 40px;
+  margin: auto;
+}
+
+section .container {
+  margin-top: 0;
 }
 
 /* Navigation styles */
+
+.dsk-top-nav {
+  display: none;
+}
 
 .navbar {
   display: flex;
@@ -66,6 +71,8 @@ body {
   border-radius: 1%;
   margin: 0 24px 0 24px;
   background-image: url(images/header-shapes\ mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Styles for the h1 and p */
@@ -115,23 +122,16 @@ body {
 
 /* Works sections starts here */
 
-.works-section {
-  margin-top: 15%;
-}
-
 .card2 {
   background: #fff;
-  width: 100%;
-  height: 600px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 8%;
   border-radius: 16px;
   border: solid 1px #dfe1e6;
+  padding-bottom: 15%;
 }
 
 .section-image {
-  width: 100%;
-  height: 220px;
   margin: 16px;
   padding-right: 30px;
 }
@@ -297,7 +297,7 @@ h2 {
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
-  padding: 16px;
+  padding: 0 16px;
 }
 
 form {
@@ -351,10 +351,8 @@ textarea {
 .bottom-line {
   width: 124px;
   height: 5px;
-  margin-top: 30px;
-  margin-bottom: 40px;
   background-color: #0d151e;
-  align-self: center;
+  margin: auto;
   border-radius: 10px;
 }
 
@@ -365,4 +363,171 @@ textarea {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+}
+
+/* Responsive design starts here */
+
+@media only screen and (min-width: 1000px) {
+  .dsk-top-nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .dsk-top-nav:hover {
+    text-decoration: underline;
+  }
+
+  nav .hamb {
+    display: none;
+  }
+
+  .navbar {
+    margin: 40px;
+  }
+
+  .card1-container {
+    margin-top: 8%;
+  }
+
+  .intro {
+    background-image: url(images/Header\ bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero {
+    margin: 0 250px;
+  }
+
+  .message {
+    margin: 20px 250px;
+  }
+
+  .connect {
+    margin: 20px 250px;
+  }
+
+  .connent-icons {
+    margin: 20px 250px;
+  }
+
+  .card2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 5%;
+  }
+
+  .about-dsk-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-dsk-top-1 {
+    width: 40%;
+    margin: 20px 50px;
+  }
+
+  .about-intro {
+    padding-top: 5%;
+  }
+
+  #message-p {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #hero-abt {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #connect-abt {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #connect-icons-abt {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  .card3-items {
+    margin: 0;
+  }
+
+  .about-dsk-top-2 {
+    width: 50%;
+    margin: 50px;
+  }
+
+  .lang-list {
+    display: flex;
+  }
+
+  .first-lang-abt {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+  }
+
+  .first-lang {
+    flex-direction: column;
+    gap: 0;
+    padding: 5px;
+    width: 122px;
+    height: 120px;
+  }
+
+  .form-section {
+    margin-top: 10%;
+    background-image: url(images/contact-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact-section {
+    background-image: url(images/contact\ form\ background\ shapes.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .contact-cont {
+    width: 50%;
+    align-self: center;
+  }
+
+  .form-btn {
+    align-self: center;
+  }
+
+  .bottom-line {
+    display: none;
+  }
+
+  .contact-p {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .container {
+    margin: auto;
+  }
+
+  .works-section {
+    margin: auto;
+  }
 }
