@@ -11,15 +11,20 @@ body {
 }
 
 .container {
-  margin: auto;
   display: grid;
+  margin-top: -10%;
 }
 
 /* card1 styles */
 
 .card1-container {
+  width: 90%;
   background: #fff;
-  margin-top: 40px;
+  margin: auto;
+}
+
+section .container {
+  margin-top: 0;
 }
 
 /* Navigation styles */
@@ -362,7 +367,7 @@ textarea {
 
 /* Responsive design starts here */
 
-@media all and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .dsk-top-nav {
     display: flex;
     list-style: none;
@@ -388,7 +393,6 @@ textarea {
 
   .card1-container {
     margin-top: 8%;
-    padding-bottom: 15%;
   }
 
   .intro {
@@ -515,5 +519,15 @@ textarea {
 
   .contact-p {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .container {
+    margin: auto;
+  }
+
+  .works-section {
+    margin: auto;
   }
 }
