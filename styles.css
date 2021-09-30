@@ -89,6 +89,17 @@ section .container {
   font-style: normal;
 }
 
+.hero:hover {
+  animation-name: greet-message;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+@keyframes greet-message {
+  from { color: #172b4d; }
+  to { color: rgb(255, 105, 180); }
+}
+
 .message {
   font-family: Poppins, sans-serif;
   font-style: normal;
