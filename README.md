@@ -12,7 +12,7 @@ This project aims to show my soft skills as well as my technical skill-sets
 - CSS
 - Github
 
-## Live Demo
+## Live Demo of Portfolio
 
 [Live Demo Link](https://gracekabaghe.github.io/portfolio/)
 
