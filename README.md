@@ -4,11 +4,17 @@ Grace's Portfolio
 
 This project aims to show my soft skills as well as my technical skill-sets
 
+![screenshot](images/portfolio-site-shot.jpeg)
+
 ## Built With
 
 - HTML
 - CSS
 - Github
+
+## Live Demo
+
+[Live Demo Link](https://gracekabaghe.github.io/portfolio/)
 
 
 ## Getting Started
