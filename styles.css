@@ -92,6 +92,7 @@ section .container {
 .hero:hover {
   animation-name: greet-message;
   animation-duration: 6s;
+  animation-delay: 1s;
 }
 
 @keyframes greet-message {
