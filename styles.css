@@ -361,6 +361,7 @@ textarea {
   border-radius: 16%;
   width: fit-content;
   margin-bottom: 20px;
+  border: 1px solid #6070ff;
 }
 
 .form-btn:hover {
