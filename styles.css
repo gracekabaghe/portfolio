@@ -117,9 +117,11 @@ section .container {
   padding-left: 0;
   align-items: baseline;
 }
-.connent-icons li>a>img:hover{
+
+.connent-icons li > a > img:hover {
   transform: scale(1.2);
 }
+
 .connect {
   font-family: Poppins, sans-serif;
   font-style: normal;
