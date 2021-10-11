@@ -389,6 +389,61 @@ textarea {
   color: #172b4d;
 }
 
+.mobile {
+  height: 800px;
+  background-image: url(images/mobile-bg.png);
+}
+
+.menuMenu {
+  list-style: none;
+  padding-top: 100px;
+  transform: translateX(-200%);
+  transition: transform 0.5s;
+  height: 900px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  color: transparent;
+}
+
+.showMenu {
+  transform: translate(0);
+}
+
+.hamburger {
+  position: fixed;
+  top: 3%;
+  margin-right: 24px;
+  z-index: 100;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  background-color: #6070ff;
+}
+
+.nav-tag {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+.menuMenu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.closeIcon {
+  position: fixed;
+  z-index: 100;
+}
+
 /* Responsive design starts here */
 
 @media only screen and (min-width: 1000px) {
@@ -451,6 +506,10 @@ textarea {
   .about-dsk-top {
     display: flex;
     justify-content: space-between;
+  }
+
+  .mobile {
+    display: none;
   }
 
   .about-dsk-top-1 {
@@ -546,12 +605,16 @@ textarea {
   }
 }
 
-@media all and (max-width: 999px) {
+@media all and (max-width: 992px) {
   .container {
     margin: auto;
   }
 
   .works-section {
     margin: auto;
+  }
+
+  .mobile {
+    display: none;
   }
 }
