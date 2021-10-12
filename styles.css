@@ -432,6 +432,7 @@ textarea {
   font-weight: 600;
   line-height: 44px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .menuMenu {
