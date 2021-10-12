@@ -40,11 +40,6 @@ section .container {
   padding: 20px;
 }
 
-.hamb {
-  color: blue;
-  margin-top: 10px;
-}
-
 .logo-fa {
   display: flex;
   width: 100%;
@@ -390,26 +385,26 @@ textarea {
 }
 
 .mobile {
-  height: 800px;
-  background-image: url(images/mobile-bg.png);
-}
-
-.menuMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 900px;
+  background-color: #6070ff;
+  transform: translateY(-200%);
   list-style: none;
   padding-top: 100px;
-  transform: translateX(-200%);
-  transition: transform 0.5s;
-  height: 900px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  color: transparent;
+  transition: transform 0.5s;
+  opacity: 0.9;
 }
 
 .showMenu {
-  transform: translate(0);
+  transform: translateY(0);
 }
 
 .hamburger {
@@ -425,6 +420,11 @@ textarea {
   background-color: #6070ff;
 }
 
+.hamb {
+  color: blue;
+  margin-top: 10px;
+}
+
 .nav-tag {
   font-family: Poppins, sans-serif;
   font-size: 32px;
@@ -434,9 +434,17 @@ textarea {
   margin-top: 20px;
 }
 
+.menuMenu {
+  list-style: none;
+}
+
 .menuMenu a {
   color: #fff;
   text-decoration: none;
+}
+
+.menuMenu:hover {
+  opacity: 2;
 }
 
 .closeIcon {
@@ -468,10 +476,6 @@ textarea {
 
   .navbar {
     margin: 40px;
-  }
-
-  .card1-container {
-    margin-top: 8%;
   }
 
   .intro {
@@ -603,6 +607,15 @@ textarea {
   .contact-p {
     text-align: center;
   }
+
+  .nav-tag {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 100px;
+  }
 }
 
 @media all and (max-width: 992px) {
@@ -612,9 +625,5 @@ textarea {
 
   .works-section {
     margin: auto;
-  }
-
-  .mobile {
-    display: none;
   }
 }

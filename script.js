@@ -1,9 +1,9 @@
-const menu = document.querySelector('.menuMenu');
+const menu = document.querySelector('.mobile');
 const menuItems = document.querySelectorAll('.nav-tag');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
-const menuIcon = document.querySelector('.mobile');
+const hamb = document.querySelector('.hamb');
 closeIcon.style.display = 'none';
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
@@ -17,6 +17,7 @@ function toggleMenu() {
   }
 }
 hamburger.addEventListener('click', toggleMenu);
+hamb.addEventListener('click', toggleMenu);
 menuItems.forEach(
   (menuItem) => {
     menuItem.addEventListener('click', toggleMenu);
