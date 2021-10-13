@@ -15,8 +15,6 @@ body {
   margin-top: -10%;
 }
 
-/* card1 styles */
-
 .card1-container {
   width: 90%;
   background: #fff;
@@ -453,7 +451,139 @@ textarea {
   z-index: 100;
 }
 
-/* Responsive design starts here */
+.container-modal {
+  width: 80%;
+  border: 1px solid #ebecf0;
+  background-color: #fff;
+  margin: auto;
+  padding: 8%;
+  margin-top: 5%;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: -10px;
+}
+
+.modal-mid-sec {
+  width: 100%;
+}
+
+.modal-sec-ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding-left: 0;
+}
+
+.modal-sec-p {
+  width: 100%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.modal-img-container {
+  height: 250px;
+  background-image: url(images/modal-image.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mfl-dev {
+  padding-right: 14%;
+}
+
+.modal-first-li {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin-left: -20px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #7a869a;
+}
+
+.modal-first-ul {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.modal-close-button {
+  position: fixed;
+  color: #67798e;
+  right: 10%;
+  padding-top: 10%;
+}
+
+.modal-h2 {
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.modal-sec-li {
+  background-color: #ebebff;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: PPoppins, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+}
+
+.modal-button {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-button button {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  padding: 10px;
+  color: #396df2;
+  border-radius: 5px;
+}
+
+.modal-btn {
+  background-color: #e5e5e5;
+  border: 1px solid #ebecf0;
+}
+
+#mobile-popup-container {
+  display: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 1.3rem 1.2rem;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 10px;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.showPage {
+  transform: translateY(0);
+}
 
 @media only screen and (min-width: 1000px) {
   .dsk-top-nav {
