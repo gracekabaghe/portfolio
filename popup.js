@@ -1,41 +1,53 @@
 const data = [
     {
         projectName: 'Tonic',
+        projectDesktop: 'Tonic',
         technology: 'Back End Dev',
         year: 2021,
         image: '/images/card2-image.png',
+        desktopImage: '/images/popdesktimage.png',
         description: 'A daily selection of privately personalized reads noaccounts or sign-ups required.',
         languages: ['CSS', 'Javascript', 'HTML'],
-        link1: 'see live',
-        link2: 'see source',
-    },
-    {
-        projectName: 'Multi-post-stories',
-        technology: 'Back End Dev',
-        year: 2021,
-        image: '/images/multipost.png',
-        description: 'A daily selection of privately personalized reads noaccounts or sign-ups required.',
-        languages: ['CSS', 'Javascript', 'Ruby',],
+        desktopLanguages: ['CSS', 'Javascript', 'HTML'],
         link1: 'see live',
         link2: 'see source',
     },
     {
         projectName: 'Tonic',
+        projectDesktop: 'Tonic',
         technology: 'Back End Dev',
         year: 2021,
         image: '/images/card2-image.png',
+        desktopImage: '/images/popdesktimage.png',
         description: 'A daily selection of privately personalized reads noaccounts or sign-ups required.',
         languages: ['CSS', 'Javascript', 'HTML'],
+        desktopLanguages: ['CSS', 'Javascript', 'HTML'],
         link1: 'see live',
         link2: 'see source',
     },
     {
-        projectName: 'Multi-post-stories',
+        projectName: 'Tonic',
+        projectDesktop: 'Tonic',
         technology: 'Back End Dev',
         year: 2021,
-        image: '/images/multipost.png',
+        image: '/images/card2-image.png',
+        desktopImage: '/images/popdesktimage.png',
         description: 'A daily selection of privately personalized reads noaccounts or sign-ups required.',
-        languages: ['CSS', 'Javascript', 'Ruby',],
+        languages: ['CSS', 'Javascript', 'HTML'],
+        desktopLanguages: ['CSS', 'Javascript', 'HTML'],
+        link1: 'see live',
+        link2: 'see source',
+    },
+    {
+        projectName: 'Tonic',
+        projectDesktop: 'Tonic',
+        technology: 'Back End Dev',
+        year: 2021,
+        image: '/images/card2-image.png',
+        desktopImage: '/images/popdesktimage.png',
+        description: 'A daily selection of privately personalized reads noaccounts or sign-ups required.',
+        languages: ['CSS', 'Javascript', 'HTML'],
+        desktopLanguages: ['CSS', 'Javascript', 'HTML'],
         link1: 'see live',
         link2: 'see source',
     },
@@ -55,8 +67,6 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
        const mobileProjectPopupWindowSeeSource = document.querySelector('#mobile-popup-container .modal-btn-seesource');
        const mobileProjectPopupWindowCloseBtn = document.querySelector('#mobile-popup-container .modal-close-button');
       
-    //    mobileProjectPopupWindowImage.src = data[i].image;
-    //    mobileProjectPopupWindowName.textContent = data[i].projectName;
        mobileProjectPopupWindowTechnologies.innerHTML = '';
        for (let j = 0; j < data[i].languages.length; j += 1) {
         const technology = document.createElement('li');
@@ -70,7 +80,34 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
       mobileProjectPopupWindow.style.display = 'block';
       mobileProjectPopupWindowCloseBtn.addEventListener('click', () => {
       mobileProjectPopupWindow.classList.add('display-none');
-    mobileProjectPopupWindow.style.display = 'none';
+      mobileProjectPopupWindow.style.display = 'none';
+      bodyScroll.style.overflow = 'auto';
+      });
+    } else {
+       const desktopProjectPopupWindow = document.querySelector('#desktop-popup-container');
+       const desktopProjectPopupWindowImage = document.querySelector('#desktop-popup-container img');
+       const desktopProjectPopupWindowName = document.querySelector('#desktop-popup-container .modal-head .modal-h2-ul .modal-h2 h2');
+       const desktopProjectPopupWindowTechnologies = document.querySelector('#desktop-popup-container .modal-first-ul .modal-first-li');
+       const desktopProjectPopupWindowDescription = document.querySelector('#desktop-popup-container p');
+       const desktopProjectPopupWindowSeeLive = document.querySelector('#desktop-popup-container .modal-btn-seelive');
+       const desktopProjectPopupWindowSeeSource = document.querySelector('#desktop-popup-container .modal-btn-seesource');
+       const desktopProjectPopupWindowCloseBtn = document.querySelector('#desktop-popup-container .modal-close-button');
+        
+       desktopProjectPopupWindowTechnologies.innerHTML = '';
+        for (let j = 0; j < data[i].desktopLanguages.length; j += 1) {
+       const technology = document.createElement('li');
+        technology.textContent = data[i].desktopLanguages[j];
+        desktopProjectPopupWindowTechnologies.appendChild(technology);
+        
+      }
+      desktopProjectPopupWindowDescription.textContent = data[i].description;
+      desktopProjectPopupWindowSeeLive.href = data[i].link1;
+      desktopProjectPopupWindowSeeSource.href = data[i].link2;
+      desktopProjectPopupWindow.classList.remove('display-none');
+      desktopProjectPopupWindow.style.display = 'block';
+      desktopProjectPopupWindowCloseBtn.addEventListener('click', () => {
+      desktopProjectPopupWindow.classList.add('display-none');
+      desktopProjectPopupWindow.style.display = 'none';
       bodyScroll.style.overflow = 'auto';
       });
     }
