@@ -38,7 +38,7 @@ section .container {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 20px auto; 
   padding: 20px;
 }
 
@@ -605,10 +605,6 @@ textarea {
     display: none;
   }
 
-  .navbar {
-    margin: 40px;
-  }
-
   .intro {
     background-image: url(images/Header\ bg.svg);
     background-size: cover;
@@ -745,7 +741,10 @@ textarea {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    margin-top: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-right: 24px;
+    color: #6070ff;
   }
 
   .modal-close-button {
