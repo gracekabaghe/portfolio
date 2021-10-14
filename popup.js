@@ -98,11 +98,11 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
       desktopProjectPopupWindowSeeSource.href = data[i].link2;
       desktopProjectPopupWindow.classList.remove('display-none');
       desktopProjectPopupWindow.style.display = 'block';
-      document.querySelector('#blur-desktop').classList.remove('blur');
+      document.querySelector('#blur-desktop').classList.add('blur');
       desktopProjectPopupWindowCloseBtn.addEventListener('click', () => {
         desktopProjectPopupWindow.classList.add('display-none');
         desktopProjectPopupWindow.style.display = 'none';
-        document.querySelector('#blur-desktop').classList.add('blur');
+        document.querySelector('#blur-desktop').classList.remove('blur');
         bodyScroll.style.overflow = 'auto';
       });
     }

@@ -10,14 +10,15 @@ body {
   background: #e5e5e5;
 }
 
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-color: #c1c7d0;
+}
+
 .container {
   display: grid;
   margin-top: -10%;
-}
-
-#desktop-popup-container {
-  position: fixed;
-  display: none;
 }
 
 .card1-container {
@@ -29,8 +30,6 @@ body {
 section .container {
   margin-top: 0;
 }
-
-/* Navigation styles */
 
 .dsk-top-nav {
   display: none;
@@ -59,8 +58,6 @@ section .container {
   font-size: 18px;
   line-height: 24px;
 }
-
-/* CSS for the intro message */
 
 .intro {
   display: flex;
@@ -456,15 +453,6 @@ textarea {
   z-index: 100;
 }
 
-.container-modal {
-  width: 80%;
-  border: 1px solid #ebecf0;
-  background-color: #fff;
-  margin: auto;
-  padding: 8%;
-  margin-top: 5%;
-}
-
 .modal-head {
   display: flex;
   justify-content: space-between;
@@ -589,6 +577,15 @@ textarea {
   overflow: auto;
 }
 
+.container-modal {
+  width: 80%;
+  border: 1px solid #ebecf0;
+  background-color: #fff;
+  margin: auto;
+  padding: 8%;
+  margin-top: 5%;
+}
+
 .modal-pop-dsk-img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -604,22 +601,6 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-  }
-
-  /* aku */
-  .blurr {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-  }
-
-  .container-modal {
-    display: none;
-    width: 80%;
-    border: 1px solid #ebecf0;
-    background-color: #fff;
-    margin: auto;
-    padding: 8%;
-    margin-top: 5%;
   }
 
   .dsk-top-nav:hover {
@@ -805,8 +786,22 @@ textarea {
   #desktop-popup-container {
     position: fixed;
     display: none;
-    right: 130px;
-    top: -72px;
+    right: 50%;
+    left: 20%;
+    top: -5%;
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .container-modal {
+    display: none;
+    width: 80%;
+    border: 1px solid #ebecf0;
+    background-color: #fff;
+    margin: auto;
+    padding: 8%;
+    margin-top: 5%;
   }
 }
 
