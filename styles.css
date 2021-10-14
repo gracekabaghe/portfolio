@@ -606,6 +606,12 @@ textarea {
     color: #344563;
   }
 
+  /* aku */
+  .blurr {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
   .container-modal {
     display: none;
     width: 80%;
