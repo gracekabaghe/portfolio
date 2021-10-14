@@ -27,7 +27,6 @@ menuItems.forEach(
 // form validation
 const form = document.querySelector('form');
 const email = document.getElementById('email');
-const textArea = document.getElementById('message');
 const errorElement = document.getElementById('error');
 function validateEmail(email) {
   const regEx = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
@@ -45,4 +44,3 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
-
