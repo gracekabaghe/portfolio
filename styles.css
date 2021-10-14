@@ -18,7 +18,7 @@ body {
 
 .container {
   display: grid;
-  margin-top: -10%;
+  width: 100%;
 }
 
 .card1-container {
