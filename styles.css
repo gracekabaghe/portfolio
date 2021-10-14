@@ -15,6 +15,15 @@ body {
   margin-top: -10%;
 }
 
+.error {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 22px;
+  padding-left: 15px;
+}
+
 /* card1 styles */
 
 .card1-container {
@@ -465,6 +474,15 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .error {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 40px;
+    padding-left: 20px;
   }
 
   .dsk-top-nav:hover {
