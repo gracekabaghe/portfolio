@@ -11,8 +11,8 @@ body {
 }
 
 .blur {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(24px);
+  -webkit-filter: blur(24px);
   background-color: #c1c7d0;
 }
 
@@ -456,12 +456,10 @@ textarea {
 .modal-head {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-left: -10px;
 }
 
 .modal-mid-sec {
-  width: 100%;
+  margin-top: 40px;
 }
 
 .modal-sec-ul {
@@ -478,14 +476,10 @@ textarea {
 }
 
 .modal-img-container {
-  height: 250px;
+  height: 200px;
   background-image: url(images/modal-image.png);
   background-position: center;
   background-size: cover;
-}
-
-#modal-img-container {
-  background-image: url(images/popdesktimage.png);
 }
 
 .mfl-dev {
@@ -779,29 +773,24 @@ textarea {
     display: flex;
   }
 
-  .modal-sec-ul-button {
-    padding-top: 5%;
+  #modal-img-container {
+    height: 300px;
+    background-image: url(images/popdesktimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   #desktop-popup-container {
     position: fixed;
     display: none;
-    right: 50%;
-    left: 20%;
-    top: -5%;
-    width: 60%;
-    height: 100%;
+    left: 50%;
+    top: 40%;
     background-color: #fff;
-  }
-
-  .container-modal {
-    display: none;
-    width: 80%;
-    border: 1px solid #ebecf0;
-    background-color: #fff;
-    margin: auto;
-    padding: 8%;
-    margin-top: 5%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    max-width: 80%;
+    border: 1px solid #c1c7d0;
+    padding: 20px 50px;
   }
 }
 

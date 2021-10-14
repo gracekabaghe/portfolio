@@ -83,7 +83,7 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
     } else {
       const desktopProjectPopupWindow = document.querySelector('#desktop-popup-container');
       const desktopProjectPopupWindowTechnologies = document.querySelector('#desktop-popup-container .modal-first-ul .modal-first-li');
-      const desktopProjectPopupWindowDescription = document.querySelector('#desktop-popup-container p');
+      const desktopProjectPopupWindowDescription = document.querySelector('#desktop-popup-container .modal-sec-p');
       const desktopProjectPopupWindowSeeLive = document.querySelector('#desktop-popup-container .modal-btn-seelive');
       const desktopProjectPopupWindowSeeSource = document.querySelector('#desktop-popup-container .modal-btn-seesource');
       const desktopProjectPopupWindowCloseBtn = document.querySelector('#desktop-popup-container .modal-close-button');
