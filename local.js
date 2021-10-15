@@ -1,6 +1,5 @@
 const contactForm = document.querySelector('form');
-
-contactForm.addEventListener('keyup', (e) => {
+contactForm.addEventListener('change', (e) => {
   e.preventDefault();
   const nameValue = document.getElementById('name').value;
   const emailValue = document.getElementById('email').value;
