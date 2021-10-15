@@ -10,13 +10,27 @@ body {
   background: #e5e5e5;
 }
 
+.blur {
+  filter: blur(24px);
+  -webkit-filter: blur(24px);
+  background-color: #c1c7d0;
+}
+
 .container {
   display: grid;
-  margin-top: -10%;
+  width: 100%;
+}
+
+.error {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 22px;
+  padding-left: 15px;
 }
 
 /* card1 styles */
-
 .card1-container {
   width: 90%;
   background: #fff;
@@ -26,8 +40,6 @@ body {
 section .container {
   margin-top: 0;
 }
-
-/* Navigation styles */
 
 .dsk-top-nav {
   display: none;
@@ -56,8 +68,6 @@ section .container {
   font-size: 18px;
   line-height: 24px;
 }
-
-/* CSS for the intro message */
 
 .intro {
   display: flex;
@@ -453,7 +463,137 @@ textarea {
   z-index: 100;
 }
 
-/* Responsive design starts here */
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-mid-sec {
+  margin-top: 40px;
+}
+
+.modal-sec-ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding-left: 0;
+}
+
+.modal-sec-p {
+  width: 100%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.modal-img-container {
+  height: 200px;
+  background-image: url(images/modal-image.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mfl-dev {
+  padding-right: 14%;
+}
+
+.modal-first-li {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin-left: -20px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #7a869a;
+}
+
+.modal-first-ul {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.modal-close-button {
+  position: fixed;
+  color: #67798e;
+  right: 10%;
+  padding-top: 10%;
+}
+
+.modal-h2 {
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.modal-sec-li {
+  background-color: #ebebff;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: PPoppins, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+}
+
+.modal-button {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-button button {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  padding: 10px;
+  color: #396df2;
+  border-radius: 5px;
+}
+
+.modal-btn {
+  background-color: #e5e5e5;
+  border: 1px solid #ebecf0;
+}
+
+#mobile-popup-container {
+  display: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 1.3rem 1.2rem;
+  text-align: left;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.container-modal {
+  width: 80%;
+  border: 1px solid #ebecf0;
+  background-color: #fff;
+  margin: auto;
+  padding: 8%;
+  margin-top: 5%;
+}
+
+.modal-pop-dsk-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @media only screen and (min-width: 1000px) {
   .dsk-top-nav {
@@ -467,16 +607,21 @@ textarea {
     color: #344563;
   }
 
+  .error {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 40px;
+    padding-left: 20px;
+  }
+
   .dsk-top-nav:hover {
     text-decoration: underline;
   }
 
   nav .hamb {
     display: none;
-  }
-
-  .navbar {
-    margin: 40px;
   }
 
   .intro {
@@ -615,7 +760,55 @@ textarea {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    margin-top: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-right: 24px;
+    color: #6070ff;
+  }
+
+  .modal-close-button {
+    position: relative;
+    color: #67798e;
+    right: 0;
+    top: -33px;
+    cursor: pointer;
+    font-size: 2em;
+  }
+
+  .modal-first-ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    gap: 30px;
+  }
+
+  .modal-mid-sec {
+    display: flex;
+  }
+
+  #modal-img-container {
+    height: 300px;
+    background-image: url(images/popdesktimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #desktop-popup-container {
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 40%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    max-width: 80%;
+    border: 1px solid #c1c7d0;
+    padding: 20px 50px;
   }
 }
 
