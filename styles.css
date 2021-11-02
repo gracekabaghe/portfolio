@@ -581,13 +581,17 @@ textarea {
   overflow: auto;
 }
 
-.container-modal {
+/* .container-modal {
   width: 80%;
   border: 1px solid #ebecf0;
   background-color: #fff;
   margin: auto;
   padding: 8%;
   margin-top: 5%;
+} */
+
+.container-modal {
+  display: none;
 }
 
 .modal-pop-dsk-img {
