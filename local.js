@@ -16,8 +16,8 @@ contactForm.addEventListener('change', (e) => {
 
 const retrievedData = JSON.parse(localStorage.getItem('formData'));
 
-window.onload = () => {
-  document.getElementById('name').value = retrievedData.nameValue;
-  document.getElementById('email').value = retrievedData.emailValue;
-  document.getElementById('message').value = retrievedData.messageValue;
-};
+// window.onload = () => {
+//   // document.getElementById('name').value = retrievedData.nameValue;
+//   document.getElementById('email').value = retrievedData.emailValue;
+//   document.getElementById('message').value = retrievedData.messageValue;
+// };
