@@ -4,7 +4,7 @@ const data = [
     projectDesktop: 'TODO',
     technology: 'Back End Dev',
     image: 'images/todo2.png',
-    desktopImage: 'images/tododeskt.png',
+    desktopImage: 'images/todo.png',
     description: 'Task management app for organization. Items can be added, edited, deleted or removed.',
     languages: ['Javascript', 'CSS', 'HTML'],
     desktopLanguages: ['Javascript', 'CSS', 'HTML'],
