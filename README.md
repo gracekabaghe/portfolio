@@ -4,8 +4,6 @@ Grace's Portfolio
 
 Here are some interesting projects I've built Javascript, React, Redux, CSS3 and HTML5.
 
-![screenshot](images/portfolio-site-shot.jpeg)
-
 ## Built With
 
 - HTML
