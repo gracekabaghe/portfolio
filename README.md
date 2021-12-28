@@ -2,7 +2,7 @@
 
 Grace's Portfolio
 
-This project aims to show my soft skills as well as my technical skill-sets
+Here are some interesting projects I've built Javascript, React, Redux, CSS3 and HTML5.
 
 ![screenshot](images/portfolio-site-shot.jpeg)
 
@@ -14,7 +14,7 @@ This project aims to show my soft skills as well as my technical skill-sets
 
 ## Live Demo of Portfolio
 
-[Live Demo Link](https://gracekabaghe.github.io/portfolio/)
+[Live Demo Link](https://awesomebookshelf.netlify.app)
 
 
 ## Getting Started
