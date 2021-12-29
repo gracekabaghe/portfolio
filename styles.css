@@ -98,7 +98,7 @@ section .container {
 .hero:hover {
   animation-name: greet-message;
   animation-duration: 6s;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 @keyframes greet-message {
@@ -113,6 +113,17 @@ section .container {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+}
+
+.message:hover {
+  animation-name: message-animate;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+@keyframes message-animate {
+  from { background-color: #fff; }
+  to { background-color: #ccd5e4; }
 }
 
 .connent-icons {
