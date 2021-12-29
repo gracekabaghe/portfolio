@@ -14,7 +14,7 @@ contactForm.addEventListener('change', (e) => {
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-const retrievedData = JSON.parse(localStorage.getItem('formData'));
+// const retrievedData = JSON.parse(localStorage.getItem('formData'));
 
 // window.onload = () => {
 //   // document.getElementById('name').value = retrievedData.nameValue;
