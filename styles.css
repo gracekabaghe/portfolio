@@ -161,11 +161,17 @@ section .container {
   border-radius: 16px;
   border: solid 1px #dfe1e6;
   padding-bottom: 15%;
+  
 }
 
 .section-image {
   margin: 16px;
   padding-right: 30px;
+}
+
+.chatimg {
+  width: 500px;
+  height: 400px;
 }
 
 h2 {
