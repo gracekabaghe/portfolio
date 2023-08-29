@@ -735,7 +735,7 @@ textarea {
   .first-lang-abt {
     display: flex;
     gap: 10px;
-    width: 50%;
+    width: 60%;
   }
 
   .first-lang {
@@ -854,4 +854,9 @@ textarea {
     width: 100%;
     height: 300px;
   }
+
+  /* ruby-img {
+    width: 50%;
+    margin-bottom: 8px;
+  } */
 }
